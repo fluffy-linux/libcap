@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/sw/bash/bin/bash
 #
 # Runtime check for whether or not syscall.AllThreadsSyscall is
 # available to the working go runtime or not. If it isn't we always

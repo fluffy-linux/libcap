@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/sw/bash/bin/bash
 # This script generates some C code for inclusion in the capsh binary.
 # The Makefile generally only generates the .c code and compares it
 # with the checked in code in the progs directory.
