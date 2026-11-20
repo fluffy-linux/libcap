@@ -32,9 +32,10 @@
 #include <sys/securebits.h>
 #include <sys/wait.h>
 #include <unistd.h>
+#include <paths.h>
 
 #ifndef SHELL
-#define SHELL "/bin/bash"
+#define SHELL _PATH_BSHELL
 #endif /* ndef SHELL */
 
 #include "./capshdoc.h"
