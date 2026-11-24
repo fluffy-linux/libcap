@@ -191,7 +191,6 @@ ifeq ($(SHARED),yes)
 endif
 
 install-static-cap: install-common-cap $(STACAPLIBNAME)
-	install -m 0644 $(STACAPLIBNAME) $(FAKEROOT)$(LIBDIR)/$(STACAPLIBNAME)
 
 install-shared-cap: install-common-cap $(MINCAPLIBNAME)
 	install -m 0755 $(MINCAPLIBNAME) $(FAKEROOT)$(LIBDIR)/$(MINCAPLIBNAME)
@@ -202,7 +201,6 @@ ifeq ($(FAKEROOT),)
 endif
 
 install-static-psx: install-common-psx $(STAPSXLIBNAME)
-	install -m 0644 $(STAPSXLIBNAME) $(FAKEROOT)$(LIBDIR)/$(STAPSXLIBNAME)
 
 install-shared-psx: install-common-psx $(MINPSXLIBNAME)
 	install -m 0755 $(MINPSXLIBNAME) $(FAKEROOT)$(LIBDIR)/$(MINPSXLIBNAME)
